@@ -1,0 +1,20 @@
+{
+  "name": "express-caxa-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "caxamacos": "caxa -i . -o ./dist/server -- 'env' 'PORT=3003' '{{caxa}}/node_modules/.bin/node' '{{caxa}}/server.js'",
+    "caxawindows": "caxa -i . -o ./dist/server.exe -- 'env' 'PORT=3003' '{{caxa}}/node_modules/.bin/node' '{{caxa}}/server.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "caxa": "^3.0.1"
+  }
+}
